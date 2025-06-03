@@ -29,20 +29,28 @@ Configure Git repo and build shell script
 
 4. Create Pipeline Project  
 Write a Jenkinsfile:  
-pipeline {  
-  agent any  
-  stages {  
-    stage('Build') {  
-      steps { echo 'Building...' }  
-    }  
-    stage('Test') {  
-      steps { echo 'Testing...' }  
-    }  
-    stage('Deploy') {  
-      steps { echo 'Deploying...' }  
-    }  
-  }  
-}  
+```groovy
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building...'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing...'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying...'
+            }
+        }
+    }
+}
+
 
 
 🔄 Source Control Integration  
