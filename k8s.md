@@ -1,7 +1,4 @@
 # ☸️ Kubernetes 
-
-This document provides hands-on tasks covering core concepts and widely used features of Kubernetes.
-
 ---
 
 ## 🚀 Getting Started
