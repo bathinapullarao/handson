@@ -1,6 +1,4 @@
-# 🐧 Linux Hands-On Task List
-
-This document contains essential Linux hands-on tasks to develop core command-line, scripting, user management, networking, and system administration skills.
+# 🐧 Linux .
 
 ---
 
