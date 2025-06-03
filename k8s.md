@@ -1,4 +1,4 @@
-# ☸️ Kubernetes Hands-On Task List
+# ☸️ Kubernetes 
 
 This document provides hands-on tasks covering core concepts and widely used features of Kubernetes.
 
