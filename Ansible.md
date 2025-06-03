@@ -1,8 +1,4 @@
-# Define Ansible hands-on tasks in Markdown format
-ansible_md_content = """
-# 🤖 Ansible Hands-On Task List
-
-This document covers a comprehensive list of Ansible tasks, useful for beginners to advanced users. It touches configuration, inventory management, playbooks, roles, variables, and more.
+# 🤖 Ansible 
 
 ---
 
