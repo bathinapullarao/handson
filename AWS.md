@@ -1,7 +1,4 @@
-# ✅ AWS Hands-On Task List
-
-A practical guide to learn and implement widely used AWS services. Follow each task to get hands-on experience with AWS infrastructure and services.
-
+# ✅ AWS
 ---
 
 ## 👤 IAM & Access Management
