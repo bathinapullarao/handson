@@ -1,6 +1,4 @@
-# ✅ Jenkins Hands-On Task List
-
-A comprehensive list of hands-on tasks to master Jenkins and its various capabilities in CI/CD pipelines, automation, integration, and deployment workflows.
+# ✅ Jenkins 
 
 ---
 
