@@ -1,10 +1,3 @@
-in GCP, covering the most widely used services for cloud engineers, developers, and DevOps professionals.
-
-I'll provide this in .MD (Markdown) format below for documentation use.
-
-markdown
-Copy
-Edit
 # ✅ GCP Hands-On Task List
 
 A curated set of tasks to help you get hands-on experience with the most commonly used Google Cloud Platform (GCP) services.
@@ -61,74 +54,71 @@ A curated set of tasks to help you get hands-on experience with the most commonl
   ```bash
   kubectl create deployment hello-server --image=gcr.io/google-samples/hello-app:1.0
   kubectl expose deployment hello-server --type=LoadBalancer --port 80 --target-port 8080
-8. Create Cloud Function
-Navigate to Cloud Functions → Create Function.
+  ```
 
-Use HTTP trigger, choose Node.js/Python runtime.
+### 8. Create Cloud Function
+- Navigate to **Cloud Functions → Create Function**.
+- Use HTTP trigger, choose Node.js/Python runtime.
+- Deploy a simple function that returns `Hello from GCP!`.
 
-Deploy a simple function that returns Hello from GCP!.
+---
 
-💾 Storage – Cloud Storage, Cloud SQL
-9. Create Cloud Storage Bucket
-Go to Cloud Storage → Create Bucket.
+## 💾 Storage – Cloud Storage, Cloud SQL
 
-Choose Standard/Regional storage.
+### 9. Create Cloud Storage Bucket
+- Go to **Cloud Storage → Create Bucket**.
+- Choose Standard/Regional storage.
+- Set public/private access.
+- Upload files and configure lifecycle policies.
 
-Set public/private access.
+### 10. Create Cloud SQL Instance (MySQL/PostgreSQL)
+- Go to **SQL → Create Instance**.
+- Choose MySQL/PostgreSQL.
+- Set password, region, and authorized networks.
+- Connect using a local client or Cloud Shell.
 
-Upload files and configure lifecycle policies.
+---
 
-10. Create Cloud SQL Instance (MySQL/PostgreSQL)
-Go to SQL → Create Instance.
+## 🌍 DNS, Load Balancing, SSL
 
-Choose MySQL/PostgreSQL.
+### 11. Configure Cloud DNS for a Domain
+- Go to **Cloud DNS → Create Zone**.
+- Create an A record pointing to an external IP of Load Balancer/VM.
 
-Set password, region, and authorized networks.
+### 12. Create HTTP(S) Load Balancer with Managed SSL
+- Create backend service with instance group.
+- Reserve a static external IP.
+- Configure frontend using HTTPS with **Google-managed certificate**.
+- Add URL map and health checks.
 
-Connect using a local client or Cloud Shell.
+---
 
-🌍 DNS, Load Balancing, SSL
-11. Configure Cloud DNS for a Domain
-Go to Cloud DNS → Create Zone.
+## 🔐 Identity, Certificates & Security
 
-Create an A record pointing to an external IP of Load Balancer/VM.
+### 13. Generate SSL Certificate Using Google Managed SSL
+- Go to **Certificates → Create SSL Certificate**.
+- Choose "Google-managed".
+- Attach it to a Load Balancer frontend configuration.
 
-12. Create HTTP(S) Load Balancer with Managed SSL
-Create backend service with instance group.
+### 14. Configure Firewall Rules and Identity-Aware Proxy
+- Allow/deny ingress traffic with custom firewall rules.
+- Enable **Identity-Aware Proxy** to secure HTTP apps running on GCE or App Engine.
 
-Reserve a static external IP.
+---
 
-Configure frontend using HTTPS with Google-managed certificate.
+## 🔄 Automation, Monitoring & Billing
 
-Add URL map and health checks.
+### 15. Create Scheduled Cloud Function with Cloud Scheduler
+- Go to **Cloud Scheduler → Create Job**.
+- Choose HTTP target to trigger a Cloud Function every X minutes.
 
-🔐 Identity, Certificates & Security
-13. Generate SSL Certificate Using Google Managed SSL
-Go to Certificates → Create SSL Certificate.
+### 16. Setup Stackdriver Monitoring and Alerts
+- Enable Monitoring API.
+- Create a custom dashboard for CPU, memory, etc.
+- Set alert policy for high CPU usage.
 
-Choose "Google-managed".
+### 17. Set Budget Alerts
+- Go to **Billing → Budgets & Alerts → Create Budget**.
+- Define thresholds and alert emails to prevent overspending.
 
-Attach it to a Load Balancer frontend configuration.
-
-14. Configure Firewall Rules and Identity-Aware Proxy
-Allow/deny ingress traffic with custom firewall rules.
-
-Enable Identity-Aware Proxy to secure HTTP apps running on GCE or App Engine.
-
-🔄 Automation, Monitoring & Billing
-15. Create Scheduled Cloud Function with Cloud Scheduler
-Go to Cloud Scheduler → Create Job.
-
-Choose HTTP target to trigger a Cloud Function every X minutes.
-
-16. Setup Stackdriver Monitoring and Alerts
-Enable Monitoring API.
-
-Create a custom dashboard for CPU, memory, etc.
-
-Set alert policy for high CPU usage.
-
-17. Set Budget Alerts
-Go to Billing → Budgets & Alerts → Create Budget.
-
-Define thresholds and alert emails to prevent overspending.
+---
