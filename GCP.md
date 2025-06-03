@@ -1,7 +1,4 @@
-# ✅ GCP Hands-On Task List
-
-A curated set of tasks to help you get hands-on experience with the most commonly used Google Cloud Platform (GCP) services.
-
+# ✅ GCP
 ---
 
 ## 👤 IAM & Access Control
