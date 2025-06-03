@@ -79,48 +79,48 @@ Use Publish Over SSH plugin
 11. Multibranch Pipeline
 Create pipeline from SCM with a Jenkinsfile per branch
 
-🔐 Credentials and Secrets
-12. Credential Management
-Store secrets via Jenkins Credentials store
-Use in pipeline:
-withCredentials([usernamePassword(credentialsId: 'my-creds', usernameVariable: 'USER', passwordVariable: 'PASS')]) {
-  sh 'curl -u $USER:$PASS https://api.example.com'
-}
+🔐 Credentials and Secrets  
+12. Credential Management  
+Store secrets via Jenkins Credentials store  
+Use in pipeline:  
+withCredentials([usernamePassword(credentialsId: 'my-creds', usernameVariable: 'USER', passwordVariable: 'PASS')]) {  
+  sh 'curl -u $USER:$PASS https://api.example.com'  
+}  
 
-🔔 Notifications
-13. Slack & Email
-Configure Slack plugin with webhook
-Use:
-slackSend channel: '#builds', message: 'Build completed!'
+🔔 Notifications  
+13. Slack & Email  
+Configure Slack plugin with webhook  
+Use:  
+slackSend channel: '#builds', message: 'Build completed!'  
 
-📈 Monitoring & Scaling
-14. Install Monitoring Plugins
-Use: Monitoring, Performance, Metrics
+📈 Monitoring & Scaling  
+14. Install Monitoring Plugins  
+Use: Monitoring, Performance, Metrics  
 
-15. Master-Agent Setup
-Add agents using SSH/JNLP
-Assign labels and run jobs on agents
+15. Master-Agent Setup  
+Add agents using SSH/JNLP  
+Assign labels and run jobs on agents  
 
-☁️ Jenkins in the Cloud
-16. Docker Jenkins
-Use:
-docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
+☁️ Jenkins in the Cloud  
+16. Docker Jenkins  
+Use:  
+docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts  
 
-17. Jenkins on Kubernetes
-Use Helm:
-helm repo add jenkins https://charts.jenkins.io
-helm install jenkins jenkins/jenkins
+17. Jenkins on Kubernetes  
+Use Helm:  
+helm repo add jenkins https://charts.jenkins.io  
+helm install jenkins jenkins/jenkins  
 
-🧠 Advanced Topics
-19. Shared Libraries
-Create and reference with:
-@Library('shared-lib') _
-mySharedStep()
-20. Parameterized Builds
-Use params.MY_PARAM in Jenkinsfile
+🧠 Advanced Topics  
+19. Shared Libraries  
+Create and reference with:  
+@Library('shared-lib') _  
+mySharedStep()  
+20. Parameterized Builds  
+Use params.MY_PARAM in Jenkinsfile  
 
-🛡️ Security & Best Practices
-20. Jenkins Hardening
-Use matrix-based security
-Integrate with LDAP or SSO
-Install Role Strategy Plugin
+🛡️ Security & Best Practices  
+20. Jenkins Hardening  
+Use matrix-based security  
+Integrate with LDAP or SSO  
+Install Role Strategy Plugin  
