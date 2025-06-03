@@ -1,7 +1,4 @@
-# ✅ Azure Hands-On Task List
-
-A curated list of practical tasks to help you get hands-on experience with the most widely used Azure services for developers, DevOps engineers, and administrators.
-
+# ✅ Azure
 ---
 
 ## 👤 Identity & Access Management
